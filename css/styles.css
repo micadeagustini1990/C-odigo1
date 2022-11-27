@@ -1,0 +1,109 @@
+/*Receteo de espacios y márgenes*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos de mi index*/
+/*Titulo*/
+
+h1 {
+    color: rgb(138, 11, 138);
+}
+
+/*Primer texto y segundo texto*/
+.color-violeta {
+    color: rgb(80, 7, 80);
+    font-weight: bold;
+}
+
+/*Nombres*/
+.color-rosa {
+    color: palevioletred;
+    font-weight: bold;
+}
+.color-rosa {
+    color: palevioletred;
+}
+
+/*Logo*/
+.logo {
+    width: 20rem;
+    height: 25rem;
+    max-width: 100%;
+ justify-content: center;
+}
+
+/*Estili id*/
+#epigrafe {
+    color: plum;
+}
+
+/*Fondos de página-gradientes*/
+#color-fondo-indumentaria {
+    background-image: linear-gradient(to bottom, rgb(248, 222, 226), rgb(207, 24, 168));
+}
+#color-tips {
+    background-image: linear-gradient(to bottom, rgb(248, 222, 226), rgb(207, 24, 168));
+}
+
+#fondo-inicio {
+    background-color: papayawhip;
+}
+/*PÁRRAFOS*/
+.card {
+    border: solid 1rem pink;
+    width: 12rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.card__parrafo {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+ .boton {
+    padding: 3rem;
+ }
+ 
+/* Menú */
+ .navegacion {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2.5rem;
+    justify-content: space-around;  
+ }
+
+
+ /*Ancho y alto*/ /*Lograr que cada imagen tenga su tamaño*/
+ 
+ .card__img {
+    width: 12rem;
+    height: 8rem;
+    max-width: 100%;
+    justify-content: center;
+ }
+
+ .flex {
+    height: 200rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+
+
+
+ 
+
+/*Fin de estilo*/
+
+
+
+
