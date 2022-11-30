@@ -1,3 +1,15 @@
+/*Media queries*/
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: beige;
+    }
+}
+img {
+    max-width: 100%;
+}
+
 /*Receteo de espacios y márgenes*/
 
 * {
@@ -5,26 +17,33 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5% ;
+}
+
+p {
+    font-size: 2rem ;
+}
 /*Estilos de mi index*/
 /*Titulo*/
 
 h1 {
-    color: rgb(138, 11, 138);
+    color: rgb(221, 20, 131);
+    text-align: center;
 }
+
 
 /*Primer texto y segundo texto*/
 .color-violeta {
-    color: rgb(80, 7, 80);
+    color: rgb(255, 38, 255);
     font-weight: bold;
 }
 
 /*Nombres*/
 .color-rosa {
-    color: palevioletred;
-    font-weight: bold;
-}
-.color-rosa {
-    color: palevioletred;
+color: rgb(250, 106, 154);
+font-weight: bold;
+font-size: 2rem;
 }
 
 /*Logo*/
@@ -33,51 +52,63 @@ h1 {
     height: 25rem;
     max-width: 100%;
  justify-content: center;
+ 
 }
 
-/*Estili id*/
+/*Epigrafe*/
 #epigrafe {
-    color: plum;
+color: rgb(192, 56, 192);
+line-height: 2;
+text-align: center;
 }
-
+.rem {
+font-size: 4rem;
+}
 /*Fondos de página-gradientes*/
 #color-fondo-indumentaria {
-    background-image: linear-gradient(to bottom, rgb(248, 222, 226), rgb(207, 24, 168));
+    background-image: linear-gradient(to bottom, rgb(253, 250, 250), rgba(247, 228, 236, 0.863));
 }
 #color-tips {
-    background-image: linear-gradient(to bottom, rgb(248, 222, 226), rgb(207, 24, 168));
+    background-image: linear-gradient(to bottom,rgb(248, 222, 226), rgb(250, 203, 238));
 }
 
-#fondo-inicio {
-    background-color: papayawhip;
+.fondo-inicio {
+    background-color: rgb(245, 245, 245);
 }
 /*PÁRRAFOS*/
+
 .card {
-    border: solid 1rem pink;
+    border: solid 1rem rgb(248, 184, 212);
     width: 12rem;
     padding: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
 }
 
 .card__parrafo {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     font-weight: bold;
+
 }
  .boton {
     padding: 3rem;
  }
  
 /* Menú */
+
  .navegacion {
+    
     list-style: none;
     display: flex;
     flex-direction: row;
     margin-right: 2.5rem;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    margin-bottom: 4rem;
+
  }
 
 
@@ -88,6 +119,7 @@ h1 {
     height: 8rem;
     max-width: 100%;
     justify-content: center;
+   
  }
 
  .flex {
