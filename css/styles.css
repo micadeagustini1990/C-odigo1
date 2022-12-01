@@ -1,10 +1,11 @@
-/*Media queries*/
+/*Media queries*/ /*320px para pantallas chicas como celulares*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
 
     body {
         background-color: beige;
     }
+
 }
 img {
     max-width: 100%;
@@ -16,7 +17,7 @@ img {
     margin: 0;
     padding: 0;
 }
-
+/*Html Recomendable el equivalente*/
 html {
     font-size: 62.5% ;
 }
@@ -28,31 +29,22 @@ p {
 /*Titulo*/
 
 h1 {
-    color: rgb(221, 20, 131);
+    color: rgb(252, 64, 211);
     text-align: center;
 }
 
 
 /*Primer texto y segundo texto*/
 .color-violeta {
-    color: rgb(255, 38, 255);
+    color: rgb(243, 109, 221);
     font-weight: bold;
 }
 
 /*Nombres*/
 .color-rosa {
-color: rgb(250, 106, 154);
+color: rgb(238, 108, 151);
 font-weight: bold;
 font-size: 2rem;
-}
-
-/*Logo*/
-.logo {
-    width: 20rem;
-    height: 25rem;
-    max-width: 100%;
- justify-content: center;
- 
 }
 
 /*Epigrafe*/
@@ -64,6 +56,18 @@ text-align: center;
 .rem {
 font-size: 4rem;
 }
+.imagenes-flex {
+    display: flex;
+    height: 200rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+ align-items: center;
+}
+.imagenes-flex img {
+    width: 12rem;
+    height: 10rem;
+}
 /*Fondos de página-gradientes*/
 #color-fondo-indumentaria {
     background-image: linear-gradient(to bottom, rgb(253, 250, 250), rgba(247, 228, 236, 0.863));
@@ -73,27 +77,30 @@ font-size: 4rem;
 }
 
 .fondo-inicio {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(243, 188, 225);
 }
 /*PÁRRAFOS*/
 
 .card {
-    border: solid 1rem rgb(248, 184, 212);
+    border: dashed .1rem rgb(238, 91, 155);
     width: 12rem;
     padding: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .card__parrafo {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
-    font-weight: bold;
-
+    font-weight: normal;
+    
 }
+
+
  .boton {
     padding: 3rem;
  }
@@ -105,32 +112,23 @@ font-size: 4rem;
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin-right: 2.5rem;
+    margin-right: 3rem;
     justify-content: space-around; 
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
+ }
 
+ a {
+    color: darkorchid;
  }
 
 
  /*Ancho y alto*/ /*Lograr que cada imagen tenga su tamaño*/
  
- .card__img {
-    width: 12rem;
-    height: 8rem;
-    max-width: 100%;
-    justify-content: center;
-   
+ 
+ #carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
  }
-
- .flex {
-    height: 200rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
- }
-
-
 
  
 
