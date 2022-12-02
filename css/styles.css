@@ -25,26 +25,23 @@ html {
 p {
     font-size: 2rem ;
 }
+
+header {
+    background-color: bisque;
+    padding: 1.5rem;
+}
 /*Estilos de mi index*/
 /*Titulo*/
 
 h1 {
-    color: rgb(252, 64, 211);
+    color: rgb(245, 126, 219);
     text-align: center;
 }
 
-
 /*Primer texto y segundo texto*/
 .color-violeta {
-    color: rgb(243, 109, 221);
+    color: rgb(240, 163, 227);
     font-weight: bold;
-}
-
-/*Nombres*/
-.color-rosa {
-color: rgb(238, 108, 151);
-font-weight: bold;
-font-size: 2rem;
 }
 
 /*Epigrafe*/
@@ -56,19 +53,52 @@ text-align: center;
 .rem {
 font-size: 4rem;
 }
-.imagenes-flex {
+/*CARD*/
+.card {
+border: dashed .2rem rgb(209, 56, 82);
+padding: 1rem;
+width: 30rem;
+
+}
+
+.caja-imagenes {
+ width: 1rem;
+ height: 1rem;
+}
+
+.card__parrafo {
+font-size: 1.8rem;
+margin-bottom: 5rem;
+}
+
+p {
+    text-align: center ;
+}
+
+.boton {
+    padding: 2rem;
+ }
+
+ /*Flex*/
+ .seccion-flex {
+    color: blueviolet;
+ }
+
+.caja-imagenes {
     display: flex;
-    height: 200rem;
-    flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
- align-items: center;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
 }
-.imagenes-flex img {
-    width: 12rem;
-    height: 10rem;
+.caja-imagenes 
+img {
+    width: 2rem;
+    height: 2rem;
 }
+
 /*Fondos de página-gradientes*/
+
 #color-fondo-indumentaria {
     background-image: linear-gradient(to bottom, rgb(253, 250, 250), rgba(247, 228, 236, 0.863));
 }
@@ -77,42 +107,16 @@ font-size: 4rem;
 }
 
 .fondo-inicio {
-    background-color: rgb(243, 188, 225);
-}
-/*PÁRRAFOS*/
-
-.card {
-    border: dashed .1rem rgb(238, 91, 155);
-    width: 12rem;
-    padding: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    background-color: white;
 }
 
-.card__parrafo {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    font-weight: normal;
-    
-}
-
-
- .boton {
-    padding: 3rem;
- }
- 
 /* Menú */
-
- .navegacion {
+ .navegacion li {
     
     list-style: none;
-    display: flex;
+    display: inline;
     flex-direction: row;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
     justify-content: space-around; 
     margin-bottom: 7rem;
  }
@@ -121,9 +125,7 @@ font-size: 4rem;
     color: darkorchid;
  }
 
-
  /*Ancho y alto*/ /*Lograr que cada imagen tenga su tamaño*/
- 
  
  #carouselExampleIndicators {
     width: 50%;
