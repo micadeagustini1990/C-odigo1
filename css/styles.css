@@ -1,101 +1,173 @@
 /*Media queries*/ /*320px para pantallas chicas como celulares*/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
 
     body {
         background-color: beige;
     }
 
-}
-img {
-    max-width: 100%;
-}
-
 /*Receteo de espacios y márgenes*/
 
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
 /*Html Recomendable el equivalente*/
 html {
     font-size: 62.5% ;
 }
-
 p {
-    font-size: 2rem ;
+    font-size: 2rem;
 }
+
+}
+img {
+    max-width: 100%;
+}
+
 
 header {
-    background-color: bisque;
-    padding: 1.5rem;
+    background-color: rgb(253, 206, 147);
+    padding: 4rem;
+    top: 0;
+    z-index: 1;
 }
-/*Estilos de mi index*/
-/*Titulo*/
+/*Estilos de mi index*/ /*Titulo*/
 
 h1 {
-    color: rgb(245, 126, 219);
+    color: rgb(238, 37, 114);
     text-align: center;
+    line-height: 10rem;
 }
 
-/*Primer texto y segundo texto*/
+
+/*INICIO*/
 .color-violeta {
     color: rgb(240, 163, 227);
     font-weight: bold;
 }
 
-/*Epigrafe*/
-#epigrafe {
-color: rgb(192, 56, 192);
-line-height: 2;
-text-align: center;
+.Informacion {
+    text-align: center;
+    margin-bottom: 4rem;
 }
+
+.Contenedor-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contenedor-label  {
+    display: flex;
+    gap: 2rem;
+}
+
+.Contenedor-label label {
+    background-color: rgb(253, 185, 97); 
+    color: rgb(138, 80, 4);
+    font-weight: bold;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.Contenedor-botones .Boton {
+   background-color: antiquewhite; 
+   color: blueviolet;
+   font-weight: bold;
+   padding: 5px 15px;
+}
+
+
+.Contenedor-botones a {
+    display: none;
+}
+
+#Instagram
+#Whatsapp {
+    display: none;
+}
+ #Instagram:checked ~ .Contenedor-botones .Boton-Instagram {
+    display: block;
+ }
+#Whatsapp:checked ~ .Contenedor-botones .Boton-Whatsapp {
+    display: block;
+}
+ /*TEXTOS*/
+.Texto-inicio {
+
+    font-family: 'Times New Roman', Times, serif italic;
+    font-size: 2rem;
+    color: rgb(170, 34, 57) ;
+    word-spacing: 1rem; 
+    line-height: 2rem;
+    margin-bottom: 4rem;
+
+}
+.texto1 {
+    font-family: 'Times New Roman', Times, serif italic;
+    font-size: 2rem;
+    color: rgb(238, 37, 114);
+    word-spacing: 1rem; 
+    line-height: 2rem;
+}
+.Texto2 {
+    font-family: 'Times New Roman', Times, serif italic;
+    font-size: 2rem;
+    color: rgb(238, 37, 114);
+    word-spacing: 1rem; 
+    line-height: 2rem;
+}
+ 
+/*Epigrafe*/
+#Epigrafe {
+ color: rgb(170, 34, 57) ;
+line-height: 3rem;
+text-align: center;
+margin-bottom: 2rem;
+}
+
+/*Título*/
 .rem {
 font-size: 4rem;
-}
-/*CARD*/
-.card {
-border: dashed .2rem rgb(209, 56, 82);
-padding: 1rem;
-width: 30rem;
-
+color: rgb(245, 22, 134);
+margin-bottom: 3rem;
 }
 
-.caja-imagenes {
- width: 1rem;
- height: 1rem;
-}
-
-.card__parrafo {
-font-size: 1.8rem;
+/*Flex*/
+.p {
+display: flex;
+font-family: Arial;
+font-size: 15rem;
 margin-bottom: 5rem;
-}
-
-p {
-    text-align: center ;
+text-align: center ;
+letter-spacing: 2rem;
+word-spacing: 4rem; 
+line-height: 2rem;
 }
 
 .boton {
-    padding: 2rem;
+    padding: 1rem;
  }
 
- /*Flex*/
+
  .seccion-flex {
-    color: blueviolet;
+    display: flex;
+    align-content: space-around;
+    color: rgb(243, 11, 100);
  }
+ 
+ 
 
 .caja-imagenes {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 2rem;
-    height: 2rem;
-}
-.caja-imagenes 
-img {
-    width: 2rem;
-    height: 2rem;
-}
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 20rem;
+    height: 30rem;
+    padding: 10rem;  
+} 
+ 
 
 /*Fondos de página-gradientes*/
 
@@ -109,7 +181,9 @@ img {
 .fondo-inicio {
     background-color: white;
 }
-
+.Color-Fondo {
+    color: white;
+}
 /* Menú */
  .navegacion li {
     
@@ -122,7 +196,7 @@ img {
  }
 
  a {
-    color: darkorchid;
+    color: rgb(138, 81, 7);
  }
 
  /*Ancho y alto*/ /*Lograr que cada imagen tenga su tamaño*/
@@ -130,6 +204,12 @@ img {
  #carouselExampleIndicators {
     width: 50%;
     margin: 0 auto;
+ 
+ }
+
+ .Footer {
+    color: rgb(170, 34, 57);
+    text-align: center;
  }
 
  
